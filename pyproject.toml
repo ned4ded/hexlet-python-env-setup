@@ -9,10 +9,12 @@ readme = "README.md"
 python = "^3.10"
 colorama = "^0.4.6"
 
-
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
 ipython = "^8.17.2"
+
+[tool.poetry.scripts]
+say-hello = "python_setup_poetry.scripts.say_hello:main"
 
 [build-system]
 requires = ["poetry-core"]
